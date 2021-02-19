@@ -1,0 +1,402 @@
+{
+  "id": "fa43d8d7-380a-468d-a056-6263c1a08b50",
+  "version": "2.0",
+  "name": "Lesson_1",
+  "url": "https://crm.geekbrains.space",
+  "tests": [{
+    "id": "506e9851-c5e3-41a4-b7e7-b873048454cf",
+    "name": "Создание проекта",
+    "commands": [{
+      "id": "f9d2e957-8d39-49ad-b8ab-261664b59211",
+      "comment": "",
+      "command": "open",
+      "target": "/user/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f82241ff-abac-4675-9814-88adff99268d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1600x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e6ac494-2fa0-4a15-aa75-d0db95cf5e75",
+      "comment": "",
+      "command": "type",
+      "target": "id=prependedInput",
+      "targets": [
+        ["id=prependedInput", "id"],
+        ["name=_username", "name"],
+        ["css=#prependedInput", "css:finder"],
+        ["xpath=//input[@id='prependedInput']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Applanatest"
+    }, {
+      "id": "0cffb11f-4c21-4afd-aaf8-bb835d08f815",
+      "comment": "",
+      "command": "type",
+      "target": "id=prependedInput2",
+      "targets": [
+        ["id=prependedInput2", "id"],
+        ["name=_password", "name"],
+        ["css=#prependedInput2", "css:finder"],
+        ["xpath=//input[@id='prependedInput2']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Student2020!"
+    }, {
+      "id": "28d997b0-96eb-4e2e-96dd-ae781d5e72c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=_submit",
+      "targets": [
+        ["id=_submit", "id"],
+        ["name=_submit", "name"],
+        ["css=#\\_submit", "css:finder"],
+        ["xpath=//button[@id='_submit']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/fieldset/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e40d64ef-ab68-4381-a2d7-203b77e8ba48",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//li[@id='user-menu']/a",
+      "targets": [
+        ["css=.breadcrumb > li:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='breadcrumb']/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Панели инструментов/')]", "xpath:innerText"]
+      ],
+      "value": "Маслов Александр"
+    }, {
+      "id": "05ca843e-4153-4a1e-8886-d0230cc9cbd7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Проекты",
+      "targets": [
+        ["linkText=Проекты", "linkText"],
+        ["css=.dropdown:nth-child(3) > .unclickable", "css:finder"],
+        ["xpath=//div[@id='main-menu']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "688be89a-ed31-410a-9a46-16c3e1ac0163",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='main-menu']/ul/li[3]/ul/li[4]/a/span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ca955b5-c08f-4391-affa-319e612d8284",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Создать проект",
+      "targets": [
+        ["linkText=Создать проект", "linkText"],
+        ["css=.back", "css:finder"],
+        ["xpath=(//a[contains(text(),'Создать проект')])[3]", "xpath:link"],
+        ["xpath=//div[@id='container']/div/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/project/create/')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "801faa92-768f-4887-be96-3a5146fc21eb",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/div/div[2]/input",
+      "targets": [
+        ["id=crm_project_name-uid-602b93a91b707", "id"],
+        ["name=crm_project[name]", "name"],
+        ["css=#crm_project_name-uid-602b93a91b707", "css:finder"],
+        ["xpath=//input[@id='crm_project_name-uid-602b93a91b707']", "xpath:attributes"],
+        ["xpath=//form[@id='crm_project-uid-602b93a980135']/div[2]/div[3]/div/div/div[2]/fieldset/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "project Alex"
+    }, {
+      "id": "1d3815e8-e86f-41a0-87f2-56bfe360b7aa",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "xpath=//div/a/span",
+      "targets": [
+        ["css=.select2-default > .select2-chosen", "css:finder"],
+        ["xpath=//div[@id='s2id_crm_project_company-uid-602b93a91c260']/a/span", "xpath:idRelative"],
+        ["xpath=//div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Укажите организацию')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b20a3f07-1f4e-4eb9-9164-901d1540f88f",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=select2-drop-mask",
+      "targets": [
+        ["id=select2-drop-mask", "id"],
+        ["css=#select2-drop-mask", "css:finder"],
+        ["xpath=//div[@id='select2-drop-mask']", "xpath:attributes"],
+        ["xpath=//body/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6ed8de1-f1db-437b-85d8-a26307ad04d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lang-ru",
+      "targets": [
+        ["css=.lang-ru", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99339291-727f-44d2-94aa-efd854d127cd",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02d60cc4-ec59-4889-ace1-1571690df3f6",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "xpath=//div[4]/div/div[2]/div/a",
+      "targets": [
+        ["css=#s2id_crm_project_contactMain-uid-602b93a96d390 > .select2-choice", "css:finder"],
+        ["xpath=(//a[@onclick='return false;'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='s2id_crm_project_contactMain-uid-602b93a96d390']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[5]", "xpath:href"],
+        ["xpath=//div[4]/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdc6daf9-a084-4cbd-bb26-230177ad9aa9",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "id=select2-drop-mask",
+      "targets": [
+        ["id=select2-drop-mask", "id"],
+        ["css=#select2-drop-mask", "css:finder"],
+        ["xpath=//div[@id='select2-drop-mask']", "xpath:attributes"],
+        ["xpath=//body/div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe0b0f11-18dd-4430-afe1-ed35f4950e0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.lang-ru",
+      "targets": [
+        ["css=.lang-ru", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66935f19-b980-4dbd-86b5-20ac1a3f0a4a",
+      "comment": "",
+      "command": "click",
+      "target": "name=crm_project[businessUnit]",
+      "targets": [
+        ["id=crm_project_businessUnit-uid-602b93a93d385", "id"],
+        ["name=crm_project[businessUnit]", "name"],
+        ["css=#crm_project_businessUnit-uid-602b93a93d385", "css:finder"],
+        ["xpath=//select[@id='crm_project_businessUnit-uid-602b93a93d385']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-crm_project_businessUnit-uid-602b93a93d385']/select", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3aeb059f-3ec4-48c6-bc04-1af9d92ad708",
+      "comment": "",
+      "command": "select",
+      "target": "name=crm_project[businessUnit]",
+      "targets": [],
+      "value": "label=Research & Development"
+    }, {
+      "id": "3a3580d4-5855-4a58-98a1-48892f28be6c",
+      "comment": "",
+      "command": "click",
+      "target": "name=crm_project[businessUnit]",
+      "targets": [
+        ["id=crm_project_businessUnit-uid-602b93a93d385", "id"],
+        ["name=crm_project[businessUnit]", "name"],
+        ["css=#crm_project_businessUnit-uid-602b93a93d385", "css:finder"],
+        ["xpath=//select[@id='crm_project_businessUnit-uid-602b93a93d385']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-crm_project_businessUnit-uid-602b93a93d385']/select", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd7a4176-addf-4848-aac3-279f1b50318a",
+      "comment": "",
+      "command": "click",
+      "target": "name=crm_project[curator]",
+      "targets": [
+        ["id=crm_project_curator-uid-602b93a967d56", "id"],
+        ["name=crm_project[curator]", "name"],
+        ["css=#crm_project_curator-uid-602b93a967d56", "css:finder"],
+        ["xpath=//select[@id='crm_project_curator-uid-602b93a967d56']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-crm_project_curator-uid-602b93a967d56']/select", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edd3bb63-97b7-4b1b-a936-f720283bbf00",
+      "comment": "",
+      "command": "select",
+      "target": "name=crm_project[curator]",
+      "targets": [],
+      "value": "label=Маслов Александр"
+    }, {
+      "id": "2862b9bc-4a8c-4491-a29b-a0edc44a5e72",
+      "comment": "",
+      "command": "click",
+      "target": "name=crm_project[curator]",
+      "targets": [
+        ["id=crm_project_curator-uid-602b93a967d56", "id"],
+        ["name=crm_project[curator]", "name"],
+        ["css=#crm_project_curator-uid-602b93a967d56", "css:finder"],
+        ["xpath=//select[@id='crm_project_curator-uid-602b93a967d56']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-crm_project_curator-uid-602b93a967d56']/select", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e311fb11-d375-4df7-bc59-959af3ac650e",
+      "comment": "",
+      "command": "click",
+      "target": "name=crm_project[rp]",
+      "targets": [
+        ["id=crm_project_rp-uid-602b93a95d62f", "id"],
+        ["name=crm_project[rp]", "name"],
+        ["css=#crm_project_rp-uid-602b93a95d62f", "css:finder"],
+        ["xpath=//select[@id='crm_project_rp-uid-602b93a95d62f']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-crm_project_rp-uid-602b93a95d62f']/select", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b872491-a3db-4012-9d63-fa7b7d35b03f",
+      "comment": "",
+      "command": "select",
+      "target": "name=crm_project[rp]",
+      "targets": [],
+      "value": "label=Маслов Александр"
+    }, {
+      "id": "83b1042d-f4e4-4d44-965d-3f113e8115c9",
+      "comment": "",
+      "command": "click",
+      "target": "name=crm_project[rp]",
+      "targets": [
+        ["id=crm_project_rp-uid-602b93a95d62f", "id"],
+        ["name=crm_project[rp]", "name"],
+        ["css=#crm_project_rp-uid-602b93a95d62f", "css:finder"],
+        ["xpath=//select[@id='crm_project_rp-uid-602b93a95d62f']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-crm_project_rp-uid-602b93a95d62f']/select", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc4b6e64-cc5b-475e-89c3-aec337bf6162",
+      "comment": "",
+      "command": "click",
+      "target": "name=crm_project[administrator]",
+      "targets": [
+        ["id=crm_project_administrator-uid-602b93a93193d", "id"],
+        ["name=crm_project[administrator]", "name"],
+        ["css=#crm_project_administrator-uid-602b93a93193d", "css:finder"],
+        ["xpath=//select[@id='crm_project_administrator-uid-602b93a93193d']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-crm_project_administrator-uid-602b93a93193d']/select", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cf85ee4-0117-4a76-a8b8-a79385aa9b0c",
+      "comment": "",
+      "command": "select",
+      "target": "name=crm_project[administrator]",
+      "targets": [],
+      "value": "label=Маслов Александр"
+    }, {
+      "id": "f8a00d8e-04ed-482a-ab39-58a61ccba199",
+      "comment": "",
+      "command": "click",
+      "target": "name=crm_project[administrator]",
+      "targets": [
+        ["id=crm_project_administrator-uid-602b93a93193d", "id"],
+        ["name=crm_project[administrator]", "name"],
+        ["css=#crm_project_administrator-uid-602b93a93193d", "css:finder"],
+        ["xpath=//select[@id='crm_project_administrator-uid-602b93a93193d']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-crm_project_administrator-uid-602b93a93193d']/select", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "839fb467-1928-445a-8366-6fffdc400dea",
+      "comment": "",
+      "command": "click",
+      "target": "name=crm_project[manager]",
+      "targets": [
+        ["id=crm_project_manager-uid-602b93a948550", "id"],
+        ["name=crm_project[manager]", "name"],
+        ["css=#crm_project_manager-uid-602b93a948550", "css:finder"],
+        ["xpath=//select[@id='crm_project_manager-uid-602b93a948550']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-crm_project_manager-uid-602b93a948550']/select", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dcd0cd5-f543-4521-b88b-c53df1e20786",
+      "comment": "",
+      "command": "select",
+      "target": "name=crm_project[manager]",
+      "targets": [],
+      "value": "label=Маслов Александр"
+    }, {
+      "id": "feda4f9b-2784-4f3b-bb5d-fa7f315a80a2",
+      "comment": "",
+      "command": "click",
+      "target": "name=crm_project[manager]",
+      "targets": [
+        ["id=crm_project_manager-uid-602b93a948550", "id"],
+        ["name=crm_project[manager]", "name"],
+        ["css=#crm_project_manager-uid-602b93a948550", "css:finder"],
+        ["xpath=//select[@id='crm_project_manager-uid-602b93a948550']", "xpath:attributes"],
+        ["xpath=//div[@id='uniform-crm_project_manager-uid-602b93a948550']/select", "xpath:idRelative"],
+        ["xpath=//div[9]/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3152eb73-7919-4e2c-a4ad-2479c69678bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-group:nth-child(3) > .btn",
+      "targets": [
+        ["css=.btn-group:nth-child(3) > .btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='crm_project-uid-602b93a980135']/div/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Сохранить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "090c408c-23a8-4a12-ab2b-2deb0e692acf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://crm.geekbrains.space/"],
+  "plugins": []
+}
