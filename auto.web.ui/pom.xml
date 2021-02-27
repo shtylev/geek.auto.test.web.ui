@@ -17,6 +17,8 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <junit_version>4.13.2</junit_version>
+    <selenium_version>3.141.59</selenium_version>
+    <webdrivermanager_version>4.3.1</webdrivermanager_version>
   </properties>
 
   <dependencies>
@@ -25,6 +27,18 @@
       <artifactId>junit</artifactId>
       <version>${junit_version}</version>
       <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>${selenium_version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>${webdrivermanager_version}</version>
     </dependency>
   </dependencies>
 
