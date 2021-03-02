@@ -19,6 +19,10 @@
     <junit_version>4.13.2</junit_version>
     <selenium_version>3.141.59</selenium_version>
     <webdrivermanager_version>4.3.1</webdrivermanager_version>
+    <jupiter_engine_version>5.7.0</jupiter_engine_version>
+    <jupiter-params_version>5.7.0</jupiter-params_version>
+    <logback-classic_version>1.2.3</logback-classic_version>
+    <slf4j_version>1.7.26</slf4j_version>
   </properties>
 
   <dependencies>
@@ -40,6 +44,32 @@
       <artifactId>webdrivermanager</artifactId>
       <version>${webdrivermanager_version}</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${jupiter_engine_version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>${jupiter-params_version}</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback-classic_version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j_version}</version>
+    </dependency>
+
   </dependencies>
 
   <build>
